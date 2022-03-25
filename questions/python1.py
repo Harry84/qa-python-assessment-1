@@ -242,7 +242,19 @@ def seven(inputString, char):
 	# help(int) for working with numbers and help(str) for working with Strings.
 
 def eight(arg1):
+	list1 = (arg1.split())
+	print((arg1.split()))
+
+	for index in range (len(list1)):
+		arg2 = list1[index].split()
+		print(arg2)
+
+		# print(list1[index].split())
+	return (arg1.split())
 	return 0
+
+eight("55 72 86")
+
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
