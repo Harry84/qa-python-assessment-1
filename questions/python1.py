@@ -281,14 +281,18 @@ def eight(arg1):
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
+	input = input.lower()
 	first = input.find("bert")
 	last = input.rfind("bert")
-	input = input[0:last]
-	input = input[first +4:]
+	if first == last:
+		return "" 
+	else:
+		input = input[0:last]
+		input = input[first +4:]
 	return input
 	
 	# return ""
-print(nine("xxBertfridgebERtyy"))
+# print(nine("xxbertfridgebertyy"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 10>
