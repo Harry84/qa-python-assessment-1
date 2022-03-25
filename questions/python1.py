@@ -246,14 +246,14 @@ def eight(arg1):
 	print((arg1.split()))
 
 	for index in range (len(list1)):
-		arg2 = list1[index].split()
+		arg2 = list1[index].split(",")
 		print(arg2)
 
 		# print(list1[index].split())
 	return (arg1.split())
 	return 0
 
-eight("55 72 86")
+# eight("55 72 86")
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
@@ -281,8 +281,14 @@ eight("55 72 86")
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def nine(input):
-	return ""
-
+	first = input.find("bert")
+	last = input.rfind("bert")
+	input = input[0:last]
+	input = input[first +4:]
+	return input
+	
+	# return ""
+print(nine("xxBertfridgebERtyy"))
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 	# <QUESTION 10>
