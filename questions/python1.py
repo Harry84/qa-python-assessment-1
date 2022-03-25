@@ -128,14 +128,16 @@ def three(input):
 
 
 def four(input):
-	if (input.index("i") > input.index("e")):
+	if input.find("c") == -1:
+		return False
+	elif (input.index("i") > input.index("e")) and input.find("c") != -1:
 		return True
 	else:
 		return False
 
     # return False
 
-# print(four("height"))
+print(four("height"))
 
 '''and (input.index("c") != input.index("i") -1)'''
 
