@@ -207,7 +207,15 @@ def six(string, int, char):
 	# Take a look at the documentation for Strings, List and range.
 
 def seven(inputString, char):
-	return -1
+	inputString = "".join(inputString.split())
+	print(inputString)
+	if inputString.find(char) != -1:
+		return (inputString.find(char) + 1)
+	else:
+		return -1
+	
+
+# print(seven("This is a Sentence","s"))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
