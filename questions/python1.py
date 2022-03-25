@@ -20,7 +20,16 @@
 	# <QUESTION 1>
 
 	# Define a function that can accept two strings as input and returns the string with maximum length to the console. 
-	
+def max_length(string1, string2):
+		if len(string1)==len(string2):
+			return string1 +" " + string2
+		if len(string1)>len(string2):
+			return string1
+		else:
+			return string2
+
+# print(max_length("hi","hello"))
+
 	# If two strings have the same length, then the function should return both strings separated by a " ".
 
 	# In this case, the strings should be returned in the same order in which they were given.
@@ -35,8 +44,8 @@
 
 	# What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
-def one(input1, input2):
-	return ""
+# def one(input1, input2):
+# 	return ""
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
