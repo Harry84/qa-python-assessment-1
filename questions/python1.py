@@ -20,7 +20,7 @@
 	# <QUESTION 1>
 
 	# Define a function that can accept two strings as input and returns the string with maximum length to the console. 
-def max_length(string1, string2):
+def one(string1, string2):
 		if len(string1)==len(string2):
 			return string1 +" " + string2
 		if len(string1)>len(string2):
@@ -28,7 +28,7 @@ def max_length(string1, string2):
 		else:
 			return string2
 
-# print(max_length("hi","hello"))
+# print(one("hi","hello"))
 
 	# If two strings have the same length, then the function should return both strings separated by a " ".
 
@@ -105,7 +105,7 @@ def three(input):
             number_of_vowels += 1
     return number_of_vowels
 
-print(three("Heelloooo"))
+# print(three("Heelloooo"))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -128,7 +128,16 @@ print(three("Heelloooo"))
 
 
 def four(input):
-    return False
+	if (input.index("i") > input.index("e")):
+		return True
+	else:
+		return False
+
+    # return False
+
+# print(four("height"))
+
+'''and (input.index("c") != input.index("i") -1)'''
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
@@ -148,7 +157,12 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+	
+    if input == 0:
+        return 1
+    return input * five(input - 1)
+
+# print(five(8))
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
